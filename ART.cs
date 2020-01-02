@@ -305,6 +305,12 @@ public class ART
 
 	public int ARTMAP(double[] I, int labelIndex, bool learningFlag)
 	{
+		// if label index is -1, it means ARTMAP behaves like a unsupervised learning
+		// if learningFlag is false, it means ARTMAP only tests the input without learning
+
+		// check if the input dimension is approperate
+		if (I.Length != GetInputDimension()) return -1;
+
 		double[] x = new double[I.Length * 2];
 		ART.CompCoding(I, x);
 
