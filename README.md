@@ -1,4 +1,4 @@
-# ARTMAP in CSharp
+# Default ARTMAP in CSharp
 
 Default ARTMAP (Fuzzy ART included)
 
